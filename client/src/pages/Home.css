@@ -1,0 +1,36 @@
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.page-container h2 {
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem;
+  color: #7f8c8d;
+  font-size: 1.1rem;
+}
+
+.error {
+  color: #e74c3c;
+  text-align: center;
+  padding: 2rem;
+}
+
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .items-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
